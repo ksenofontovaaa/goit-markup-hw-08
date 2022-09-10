@@ -3,9 +3,22 @@
 }
 
 .banner {
+
+padding-top: 118px;
+padding-bottom: 118px;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
+
+// @media screen and (min-width:480px) {
+//         padding-top: 118px;
+//         padding-bottom: 118px;  
+//     }
+
+
+@media screen and (min-width:1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
+}
 }
 
 .banner__content {
@@ -15,17 +28,30 @@
 }
 
 .banner__title {
-    max-width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-   @extend %light-color;
-
-    margin-bottom: 30px;
+    @extend %light-color;
     @extend %margin-auto;
-    justify-content: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+        // text-align: center;
+        // letter-spacing: 0.06em;
+        // text-transform: uppercase;
+       
+    
+        // margin-bottom: 30px;
+        justify-content: center;
+    }
+    
 }
 
 .ban-button {

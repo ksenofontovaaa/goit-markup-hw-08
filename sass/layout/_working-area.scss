@@ -1,12 +1,23 @@
 
 .working-area {
-    padding-top: 0;
+    display: none;
+    @media screen and (min-width:1200px) {
+        display: flex;
+        padding-top: 0; 
+    }
+    
+    
 }
 
 .working-area__title {
+    
     @extend %title-of-section; 
     @extend %margin-auto;
     justify-content: center;
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
     }
 
 .work {

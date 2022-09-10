@@ -1,20 +1,24 @@
-.modal-title, .case__name, .kind__button, .worker__name, .benefits__title {
+.modal-title, .case__name, .kind__button, .worker__name, .benefits__title, .site__link, .contact__link {
   color: #212121;
 }
 
-.sign__email, .sign-up__name, .labor__text, .kind__button:hover, .kind__button:focus, .work__text, .ban-button, .banner__title {
+.sign__email, .sign-up__name, .foot-soc__title, .down__adress, .logo, .logo__down, .labor__text, .kind__button:hover, .kind__button:focus, .work__text, .ban-button, .banner__title {
   color: #FFFFFF;
 }
 
-.policy-doc {
+.policy-doc, .down__link:hover, .down__link:focus, .down__adress:hover, .down__adress:focus, .fotlog, .site__link:hover, .site__link:focus, .contact__link:hover, .contact__link:focus, .current, .logo {
   color: #2196F3;
 }
 
-.lab-text-name, .check-text, .case__type, .worker__position, .benefits__description {
+.lab-text-name, .check-text, .case__type, .worker__position, .benefits__description, .contact__link {
   color: #757575;
 }
 
-.modal-check:checked + .check-text::before, .kind__button:hover, .kind__button:focus, .worker-soc__link:hover, .ban-button {
+.logo__part {
+  color: black;
+}
+
+.modal-check:checked + .check-text::before, .fsoc__link:hover, .kind__button:hover, .kind__button:focus, .worker-soc__link:hover, .ban-button, .current::after {
   background-color: #2196F3;
 }
 
@@ -60,15 +64,15 @@
 
 .all-clients__title, .workers__title, .working-area__title {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-.check-text, .modal-close, .kind, .clients__link, .worker-soc__link, .worker-soc, .work__text {
+.check-text, .modal-close, .fsoc__link, .kind, .clients__link, .worker-soc__link, .worker-soc, .work__text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,12 +108,16 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 .container {
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -126,6 +134,83 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-right: 93px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.site, .contact {
+  display: flex;
+  gap: 50px;
+}
+
+.contact {
+  margin-left: auto;
+}
+
+.current {
+  position: relative;
+  padding-bottom: 32px;
+  font-weight: 14;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+}
+.current:hover::after {
+  display: block;
+}
+
+.site__link, .contact__link {
+  font-weight: 14;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact__icon {
+  fill: currentColor;
 }
 
 .main > .container {
@@ -157,13 +242,13 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .banner__title {
     max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
+    margin-bottom: 30px;
     justify-content: center;
   }
 }
@@ -178,25 +263,15 @@ img {
 }
 
 .benefits {
-  display: block;
-}
-@media screen and (min-width: 1200px) {
-  .benefits {
-    display: flex;
-  }
+  display: flex;
 }
 
 .benefits__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 1200px) {
-  .benefits__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  margin-right: 30px;
 }
 
 .icon-ben {
-  width: 450px;
+  width: 270px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -204,60 +279,29 @@ img {
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 1200px) {
-  .icon-ben {
-    width: 270px;
-    height: 120px;
-  }
-}
 
 .benefits__title {
-  display: block;
-  justify-content: center;
-  text-align: center;
-  font-weight: 700;
+  font-weight: 14;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 1200px) {
-  .benefits__title {
-    display: inline;
-  }
-}
 
 .benefits__description {
-  font-weight: 400;
+  font-weight: 14;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 1200px) {
-  .benefits__description {
-    margin-bottom: 0;
-  }
-}
 
 .working-area {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .working-area {
-    display: flex;
-    padding-top: 0;
-  }
+  padding-top: 0;
 }
 
 .working-area__title {
   justify-content: center;
-}
-@media screen and (min-width: 1200px) {
-  .working-area__title {
-    font-size: 36px;
-    margin-bottom: 50px;
-  }
 }
 
 .work {
@@ -279,7 +323,7 @@ img {
   width: 100%;
   bottom: 0;
   left: 0;
-  font-weight: 700;
+  font-weight: 14;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -287,12 +331,10 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-@media screen and (min-width: 1200px) {
-  .worker {
-    display: flex;
-    align-items: center;
-    margin: 0;
-  }
+.worker {
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
 .worker__item {
@@ -322,12 +364,6 @@ img {
   fill: #FFFFFF;
 }
 
-@media screen and (min-width: 1200px) {
-  .workers__title {
-    font-size: 36px;
-  }
-}
-
 .worker__name {
   font-size: 16px;
   line-height: 1.18;
@@ -349,11 +385,9 @@ img {
   padding-bottom: 90px;
 }
 
-@media screen and (min-width: 1200px) {
-  .clients {
-    display: flex;
-    gap: 30px;
-  }
+.clients {
+  display: flex;
+  gap: 30px;
 }
 
 .clients__link {
@@ -378,12 +412,6 @@ img {
 .all-clients__title {
   margin-bottom: 50px;
 }
-@media screen and (min-width: 1200px) {
-  .all-clients__title {
-    font-size: 36px;
-    margin-bottom: 50px;
-  }
-}
 
 .kind {
   margin-bottom: 50px;
@@ -392,7 +420,7 @@ img {
 
 .kind__button {
   padding: 6px 22px;
-  font-weight: 500;
+  font-weight: 16;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
@@ -425,7 +453,7 @@ img {
   left: 0;
   height: 101%;
   padding: 63px 24px;
-  font-weight: 400;
+  font-weight: 18;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -468,6 +496,77 @@ img {
   letter-spacing: 0.03em;
 }
 
+.footer {
+  background-color: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer > .container {
+  display: flex;
+  gap: 70px;
+}
+
+.logo, .logo__down {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 26;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.fotlog {
+  margin-bottom: 20px;
+}
+
+.down__link, .down__adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.down__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.foot-soc__title {
+  font-weight: 14;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.fsoc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fsoc__item {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.fsoc__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fsoc__icon {
+  fill: #FFFFFF;
+}
+.fsoc__link:hover .fsoc__icon {
+  fill: #FFFFFF;
+}
+
 .sign {
   margin: 0;
   display: flex;
@@ -475,7 +574,7 @@ img {
 
 .sign-up__name {
   display: block;
-  font-weight: 700;
+  font-weight: 14;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -602,8 +701,22 @@ img {
 .modal-input-coment:focus {
   border-color: #2196F3;
 }
+.modal-input-coment::-moz-placeholder {
+  font-weight: 12;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-input-coment:-ms-input-placeholder {
+  font-weight: 12;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 .modal-input-coment::placeholder {
-  font-weight: 400;
+  font-weight: 12;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -657,7 +770,8 @@ img {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -675,7 +789,7 @@ img {
 .lab-text-name {
   display: block;
   margin-bottom: 4px;
-  font-weight: 400;
+  font-weight: 12;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;

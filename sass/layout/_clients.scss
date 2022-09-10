@@ -5,10 +5,13 @@
 }
 
 .clients {
-    display: flex;
     @extend %margin-auto;
-
-    gap: 30px;
+    @media screen and (min-width:1200px) {
+        display: flex;
+    
+        gap: 30px;
+    }
+   
     
 }
 
@@ -38,4 +41,8 @@
 .all-clients__title {
     @extend %title-of-section;
     margin-bottom: 50px;
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
 }

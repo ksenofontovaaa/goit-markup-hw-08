@@ -1,3 +1,12 @@
+@media screen and (min-width:1200px) {
+        
+}
+
+@media screen and (min-width:768px) {
+        
+}
+
+
 %btn-settings {
     margin-left: auto;
     margin-right: auto;
@@ -35,13 +44,13 @@
 
 %title-of-section {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 %flex-center {
@@ -56,7 +65,7 @@
 }
 
 @mixin text($fw, $fs, $fh, $ls) {
-    font-weight: $fs;
+    font-weight: $fw;
     font-size: $fs*1px;
     line-height: $fh;
     letter-spacing: $ls*1em;   
