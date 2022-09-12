@@ -1,10 +1,15 @@
 .all-clients {
-    padding-top: 90px;
-    padding-bottom: 90px;
-   
+    @media screen and (min-width:1200px) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+       
+    }
 }
 
 .clients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     @extend %margin-auto;
     @media screen and (min-width:1200px) {
         display: flex;
@@ -18,14 +23,16 @@
 
 .clients__link {
     @extend %flex-center;
-    
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     &:hover {
         border-color: #2196F3;
+    }
+    @media screen and (min-width:1200px) {
+        width: 170px;
     }
 }
 
@@ -40,7 +47,7 @@
 
 .all-clients__title {
     @extend %title-of-section;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     @media screen and (min-width:1200px) {
         font-size: 36px;
         margin-bottom: 50px;
