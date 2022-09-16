@@ -6,14 +6,14 @@
     }
 }
 
-.header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
-    @media screen and (min-width:1200px) {
-        
-    }
-}
+// .header {
+
+//     @media screen and (min-width:1200px) {
+//         padding-top: 24px;
+//         padding-bottom: 25px;
+//         border-bottom: 1px solid #ECECEC;
+//     }
+// }
 .menu-button {
     display: inline-flex;
     margin: 0;
@@ -22,12 +22,19 @@
     background-color: transparent;
 }
 
-.navigation {
-    @media screen and (min-width:1200px) {
-        display: flex;
-        align-items: center;   
-    }
+.menu-button .icon-cross {
+    display: none;
 }
+.menu-button.open .icon-cross {
+    display: block;
+}
+
+// .navigation {
+//     @media screen and (min-width:1200px) {
+//         display: flex;
+//         align-items: center;   
+//     }
+// }
 
 .logo {
     display: inline-block;
@@ -44,6 +51,9 @@
 
    
     @extend %hover-color;
+    @media screen and (min-width:1200px) {
+        
+    }
 
 }
 
@@ -51,70 +61,87 @@
     @extend %second-title; 
 }
 
-.site, .contact {
-    display: flex;
+// .site, .contact {
+   
+//     @media screen and (min-width:1200px) {
+//         display: flex;
     
-    gap: 50px;
-}
+//         gap: 50px;
+//     }
+// }
 
 
-.contact {
-    margin-left: auto;
-}
+// .contact {
+    
+//     @media screen and (min-width:1200px) {
+//       margin-left: auto;  
+//     }
+// }
 
-.current {
-    position: relative;
-    padding-bottom: 32px;
-    @extend %hover-color;
-    @include  text(500, 14, 1.14, 0.02);
+// .current {
+//     @extend %hover-color;
+//     @include  text(500, 14, 1.14, 0.02);
     
-    &::after {
-        content: "";
+//     @media screen and (min-width:1200px) {
+//     position: relative;
+//     padding-bottom: 32px;
+//     &::after {
+//         content: "";
     
-        position: absolute;
-        left: 0;
-        bottom: 0;
+//         position: absolute;
+//         left: 0;
+//         bottom: 0;
     
-        display: block;
-        width: 100%;
-        height: 5px;
-        @extend %back-color;
-        border-radius: 2px
+//         display: block;
+//         width: 100%;
+//         height: 5px;
+//         @extend %back-color;
+//         border-radius: 2px
         
-    }
-    &:hover::after {
-        display: block;
-    }
-}
+//     }
+//     &:hover::after {
+//         display: block;
+//     }
+//     }
+// }
 
 
 
-.site__link, .contact__link  {
-    @include  text(500, 14, 1.14, 0.02);
+// .site__link, .contact__link  {
+//     @include  text(500, 14, 1.14, 0.02);
 
-    @extend %dark-color;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-
-
-.contact__link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    @extend %link-color;
-    &:hover, &:focus {
-        @extend %hover-color;
-        } 
-}
+//     @extend %dark-color;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+//     @media screen and (min-width:1200px) {
+        
+//     }
+// }
 
 
 
-.site__link:hover, .site__link:focus {
-    @extend %hover-color;
-}
+// .contact__link {
 
-.contact__icon {
-        fill: currentColor;
-    }
+//     @extend %link-color;
+//     &:hover, &:focus {
+//         @extend %hover-color;
+//     } 
+//     @media screen and (min-width:1200px) {
+//         display: flex;
+//         align-items: center;
+//         gap: 10px;
+//     }
+// }
+
+
+
+// .site__link:hover, .site__link:focus {
+//     @extend %hover-color;
+
+// }
+
+// .contact__icon {
+//         fill: currentColor;
+//         @media screen and (min-width:1200px) {
+        
+//         }
+//     }

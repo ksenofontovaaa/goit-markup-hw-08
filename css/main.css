@@ -1,4 +1,4 @@
-.modal-title, .case__name, .kind__button, .worker__name, .benefits__title, .site__link, .contact__link {
+.modal-title, .case__name, .kind__button, .worker__name, .benefits__title {
   color: #212121;
 }
 
@@ -6,11 +6,11 @@
   color: #FFFFFF;
 }
 
-.policy-doc, .down__link:hover, .down__link:focus, .down__adress:hover, .down__adress:focus, .fotlog, .site__link:hover, .site__link:focus, .contact__link:hover, .contact__link:focus, .current, .logo {
+.policy-doc, .down__link:hover, .down__link:focus, .down__adress:hover, .down__adress:focus, .fotlog, .logo {
   color: #2196F3;
 }
 
-.lab-text-name, .check-text, .case__type, .worker__position, .benefits__description, .contact__link {
+.lab-text-name, .check-text, .case__type, .worker__position, .benefits__description {
   color: #757575;
 }
 
@@ -18,7 +18,7 @@
   color: black;
 }
 
-.modal-check:checked + .check-text::before, .fsoc__link:hover, .kind__button:hover, .kind__button:focus, .worker-soc__link:hover, .ban-button, .current::after {
+.modal-check:checked + .check-text::before, .fsoc__link:hover, .kind__button:hover, .kind__button:focus, .worker-soc__link:hover, .ban-button {
   background-color: #2196F3;
 }
 
@@ -139,11 +139,6 @@ img {
   }
 }
 
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ECECEC;
-}
 .menu-button {
   display: inline-flex;
   margin: 0;
@@ -152,11 +147,12 @@ img {
   background-color: transparent;
 }
 
-@media screen and (min-width: 1200px) {
-  .navigation {
-    display: flex;
-    align-items: center;
-  }
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.open .icon-cross {
+  display: block;
 }
 
 .logo {
@@ -171,55 +167,6 @@ img {
   font-size: 26px;
   line-height: 1.19;
 }
-
-.site, .contact {
-  display: flex;
-  gap: 50px;
-}
-
-.contact {
-  margin-left: auto;
-}
-
-.current {
-  position: relative;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 5px;
-  border-radius: 2px;
-}
-.current:hover::after {
-  display: block;
-}
-
-.site__link, .contact__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact__link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.contact__icon {
-  fill: currentColor;
-}
-
 .main > .container {
   display: flex;
 }
