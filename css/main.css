@@ -6,16 +6,12 @@
   color: #FFFFFF;
 }
 
-.policy-doc, .down__link:hover, .down__link:focus, .down__adress:hover, .down__adress:focus, .fotlog, .logo {
+.policy-doc, .down__link:hover, .down__link:focus, .down__adress:hover, .down__adress:focus, .fotlog {
   color: #2196F3;
 }
 
 .lab-text-name, .check-text, .case__type, .worker__position, .benefits__description {
   color: #757575;
-}
-
-.logo__part {
-  color: black;
 }
 
 .modal-check:checked + .check-text::before, .fsoc__link:hover, .kind__button:hover, .kind__button:focus, .worker-soc__link:hover, .ban-button {
@@ -133,42 +129,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .header > .container {
+  .main > .container {
     display: flex;
-    align-items: center;
   }
-}
-
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.open .icon-cross {
-  display: block;
-}
-
-.logo {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  margin-right: 93px;
-  margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-.main > .container {
-  display: flex;
 }
 
 .banner {
