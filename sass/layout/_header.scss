@@ -6,28 +6,28 @@
 //     }
 // }
 
-// .header {
+.header {
 
-//     @media screen and (min-width:1200px) {
-//         padding-top: 24px;
-//         padding-bottom: 25px;
-//         border-bottom: 1px solid #ECECEC;
-//     }
-// }
-// .menu-button {
-//     // display: inline-flex;
-//     margin: 0;
-//     padding: 0;
-//     border: none;
-//     background-color: transparent;
-// }
+    @media screen and (min-width:1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #ECECEC;
+    }
+}
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
 
-// .menu-button .icon-cross {
-//     display: none;
-// }
-// .menu-button.open .icon-cross {
-//     display: block;
-// }
+.menu-button.open .icon-cross {
+    display: none;
+}
+.menu-button .icon-cross {
+    display: block;
+}
 
 // // .navigation {
 // //     @media screen and (min-width:1200px) {
