@@ -1,9 +1,13 @@
 @import './utilities/colors';
 @import './utilities/placeholders';
+
 @import './base/reset';
+
 @import './components/container';
 @import './components/section';
+
 @import './layout/header';
+@import './layout/mobile-menu';
 @import './layout/banner';
 @import './layout/benefits';
 @import './layout/working-area';
