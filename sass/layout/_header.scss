@@ -18,6 +18,7 @@
         border-bottom: 1px solid #ECECEC;
     }
 }
+
 .menu-button {
     display: inline-flex;
     line-height: 0;
@@ -28,10 +29,18 @@
     height: 40px;
     width: 40px;
     align-items: center;
+    @media screen and (min-width:1200px) {
+        display: none;
+    }
 }
 
 .site, .contact {
     display: none;
+    @media screen and (min-width:1200px) {
+        display: flex;
+    
+        gap: 50px;
+    }
 }
 
 .navigation {
@@ -66,14 +75,14 @@
     @extend %second-title; 
 }
 
-.site, .contact {
+// .site, .contact {
    
-    @media screen and (min-width:1200px) {
-        display: flex;
+//     @media screen and (min-width:1200px) {
+//         display: flex;
     
-        gap: 50px;
-    }
-}
+//         gap: 50px;
+//     }
+// }
 
 
 .contact {
@@ -100,7 +109,7 @@
         display: block;
         width: 100%;
         height: 5px;
-        @extend %back-color;
+        background-color: #2196F3;
         border-radius: 2px
         
     }
@@ -118,22 +127,33 @@
     @extend %dark-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     @media screen and (min-width:1200px) {
-        
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #212121;
+       
     }
 }
 
 
 
 .contact__link {
-
-    @extend %link-color;
-    &:hover, &:focus {
-        @extend %hover-color;
-    } 
+   
+    // &:hover, &:focus {
+    //     @extend %hover-color;
+    // } 
     @media screen and (min-width:1200px) {
         display: flex;
         align-items: center;
         gap: 10px;
+        color: #212121;
+    }
+}
+
+.contact__link:hover, .contact__link:focus {
+    @media screen and (min-width:1200px) {
+        color: #2196F3;
     }
 }
 
