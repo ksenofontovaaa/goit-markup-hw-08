@@ -122,17 +122,32 @@
             <div class="container">
                 <h2 class="working-area__title">Чем мы занимаемся</h2>
                 <ul class="work list">
-                    <li class="work__item"><img src="./images/about_img_1.jpg" alt="Work photo" width="370">
+                    <li class="work__item"><picture>
+                        <source srcset="./images/about_img_1.jpg 1x, ./images/about_img_1@2x.jpg 2x"
+                        media="(min-width: 1200px)"/>
+
+                        <img src="./images/about_img_1.jpg" alt="Work photo" width="370">
+                    </picture>
                     <p class="work__text">
                         ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ
                     </p>
                     </li>
-                    <li class="work__item"><img src="./images/about_img_2.jpg" alt="Work photo" width="370">
+                    <li class="work__item"><picture>
+                        <source srcset="./images/about_img_2.jpg 1x, ./images/about_img_2@2x.jpg 2x"
+                        media="(min-width: 1200px)"/>
+
+                        <img src="./images/about_img_2.jpg" alt="Work photo" width="370">
+                    </picture>
                         <p class="work__text">
                             МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ
                         </p>
                     </li>
-                    <li class="work__item"><img src="./images/about_img_3.jpg" alt="Work photo" width="370">
+                    <li class="work__item"><picture>
+                        <source srcset="./images/about_img_3.jpg 1x, ./images/about_img_3@2x.jpg 2x"
+                        media="(min-width: 1200px)"/>
+
+                        <img src="./images/about_img_3.jpg" alt="Work photo" width="370">
+                    </picture>
                         <p class="work__text">
                             ДИЗАЙНЕРСКИЕ РЕШЕНИЯ
                         </p>
@@ -146,13 +161,17 @@
                 <ul class="worker list">
                     <li class="worker__item">
                         <picture>
-                            <source
+                            <source srcset="./images/product_des_img.jpg 1x, ./images/work-desk1@2x.jpg 2x"
+                            media="(min-width: 1200px)"/>
                             
-                            />
-
+                            <source srcset="./images/tablet/work-tablet1.jpg 1x, ./images/tablet/work-tablet1@2x.jpg 2x"
+                            media="(min-width: 768px)"/>
+                            
+                            <source srcset="./images/mobile/img.jpg 1x, ./images/mobile/img@2x.jpg 2x"
+                            media="(max-width: 767px)"/>
+            
                             <img src="./images/product_des_img.jpg" alt="worker photo" width="270">
                         </picture>
-                        
                         <h3 class="worker__name">Игорь Демьяненко</h3>
                         <p class="worker__position">Product Designer</p>
                         <ul class="worker-soc list">
@@ -181,7 +200,28 @@
                         </ul>
                     </li>
                     <li class="worker__item">
-                        <img src="./images/frontend_img.jpg" alt="worker photo" width="270">
+                        <picture>
+                            <!-- <source
+                            scrset="./images/frontend_img.wp2 1x"
+                            media="(min-width: 1200px)"
+                            type="image/webp"
+                            /> -->
+                            <source srcset="./images/frontend_img.jpg 1x, ./images/work-desk2@2x.jpg 2x"
+                            media="(min-width: 1200px)"/>
+                            <!-- <source srcset="./images/tablet/work-tablet2.wp2 1x"
+                            media="(min-width: 768px)"
+                            type="image/webp"/> -->
+                            <source srcset="./images/tablet/work-tablet2.jpg 1x, ./images/tablet/work-tablet2@2x.jpg 2x"
+                            media="(min-width: 768px)"/>
+                            <!-- <source srcset="./images/mobile/img2.wp2 1x"
+                            media="(max-width: 767px)"
+                            type="image/webp"/> -->
+                            <source srcset="./images/mobile/img2.jpg 1x, ./images/mobile/img2@2x.jpg 2x"
+                            media="(max-width: 767px)"/>
+
+                            <img src="./images/frontend_img.jpg" alt="worker photo" width="270">
+                        </picture>
+                        
                         <h3 class="worker__name">Ольга Репина</h3>
                         <p class="worker__position">Frontend Developer</p>
                         <ul class="worker-soc list">
@@ -210,7 +250,27 @@
                         </ul>
                     </li>
                     <li class="worker__item">
-                        <img src="./images/marketing_img.jpg" alt="worker photo" width="270">
+                        <picture>
+                            <!-- <source
+                            scrset="marketing_img.wp2 1x"
+                            media="(min-width: 1200px)"
+                            type="image/webp"
+                            /> -->
+                            <source srcset="./images/marketing_img.jpg 1x, ./images/work-desk3@2x.jpg 2x"
+                            media="(min-width: 1200px)"/>
+                            <!-- <source srcset="./images/tablet/work-tablet3.wp2 1x"
+                            media="(min-width: 768px)"
+                            type="image/webp"/> -->
+                            <source srcset="./images/tablet/work-tablet3.jpg 1x, ./images/tablet/work-tablet3@2x.jpg 2x"
+                            media="(min-width: 768px)"/>
+                            <!-- <source srcset="./images/mobile/img3.wp2 1x"
+                            media="(max-width: 767px)"
+                            type="image/webp"/> -->
+                            <source srcset="./images/mobile/img3.jpg 1x, ./images/mobile/img3@2x.jpg 2x"
+                            media="(max-width: 767px)"/>
+
+                            <img src="./images/marketing_img.jpg" alt="worker photo" width="270">
+                        </picture>
                         <h3 class="worker__name">Николай Тарасов</h3>
                         <p class="worker__position">Marketing</p>
                         <ul class="worker-soc list">
@@ -239,7 +299,18 @@
                         </ul>
                     </li>
                     <li class="worker__item">
-                        <img src="./images/ui_des_img.jpg" alt="worker photo" width="270">
+                         <picture>
+                            <source srcset="./images/ui_des_img.jpg 1x, ./images/work-desk4@2x.jpg 2x"
+                            media="(min-width: 1200px)"/>
+                           
+                            <source srcset="./images/tablet/work-tablet4.jpg 1x, ./images/tablet/work-tablet4@2x.jpg 2x"
+                            media="(min-width: 768px)"/>
+                            
+                            <source srcset="./images/mobile/img4.jpg 1x, ./images/mobile/img4@2x.jpg 2x"
+                            media="(max-width: 767px)"/>
+
+                            <img src="./images/ui_des_img.jpg" alt="worker photo" width="270">
+                        </picture>
                         <h3 class="worker__name">Михаил Ермаков</h3>
                         <p class="worker__position">UI Designer</p>
                         <ul class="worker-soc list">
@@ -322,6 +393,7 @@
     </main>
     <footer class="footer">
         <div class="container">
+            <div class="tablet">
             <div>
             <a href="" class="logo fotlog link">Web<span class="logo__down link">Studio</span></a>
             <address class="footer__contact">
@@ -365,6 +437,7 @@
                     </li>
                 </ul>
              </div>
+            </div>
              <form class="sign-up"> 
                 <p class="sign-up__name">Подпишитесь на рассылку</p>
                 <div class="sign">

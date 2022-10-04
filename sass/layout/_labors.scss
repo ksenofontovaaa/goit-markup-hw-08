@@ -6,6 +6,11 @@
     margin-bottom: 40px;
     
     @extend %margin-auto;
+    @media screen and (min-width:768px) {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
     @media screen and (min-width:1200px) {
         align-items: center;
         justify-content: center;
