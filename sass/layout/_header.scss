@@ -12,6 +12,7 @@
 .header {
     padding-top: 16px;
     padding-bottom: 16px;
+    border-bottom: 1px solid #ECECEC;
     @media screen and (min-width:1200px) {
         padding-top: 24px;
         padding-bottom: 25px;
@@ -29,9 +30,21 @@
     height: 40px;
     width: 40px;
     align-items: center;
+    
+    // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width:1200px) {
         display: none;
     }
+}
+
+// .burger {
+//     fill: #212121;
+//     // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+.menu-button:hover + .burger {
+    fill: #2196F3;
 }
 
 .site, .contact {
