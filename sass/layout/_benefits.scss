@@ -36,7 +36,8 @@
 }
 
 .icon-ben {
-    width: 450px;
+    width: 100%;
+    
     height: 120px;
     @extend %light-back;
     border-radius: 4px;
@@ -45,6 +46,9 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
     @media screen and (min-width:768px) {
         width: 354px;
     height: 120px;

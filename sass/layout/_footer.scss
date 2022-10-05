@@ -3,23 +3,52 @@
     padding-top: 60px;
     padding-bottom: 60px;
     @media screen and (min-width:1200px) { 
-    }
-}
-.footer > .container {
-    
-    @media screen and (min-width:1200px) {
         display: flex;
-        gap: 70px; 
     }
-
 }
+
 
 .tablet {
-    display: flex;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        display: flex;
     gap: 165px;
     align-items: center;
     justify-content: center;
+    padding-bottom: 60px;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        padding-bottom: 0;
+        // align-items: baseline;
+        // justify-content: center;
+        gap: 70px;
+    }
 }
+
+.footer > .container {
+    @media screen and (min-width:1200px) {
+        display: flex;
+
+        flex-direction: column;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 93px; 
+        // align-items: flex-start;
+    }
+
+}  
+
+// .desk {
+//     @media screen and (min-width:1200px) {
+//        display: flex;
+//        align-items: center;
+//        justify-content: space-between; 
+//     }
+// }
 
 .logo, .logo__down {
     display: inline-block;
@@ -50,6 +79,7 @@
         margin-bottom: 20px;
     }
     @media screen and (min-width:1200px) {
+        display: inline;
         &:last-child {
             margin-bottom: 0;
         }  
@@ -70,6 +100,11 @@
 .down__item:not(:last-child) {
     margin-bottom: 9px;
 }
+.down__item:first-child {
+    @media screen and (min-width:1200px) {
+        display: inline;
+    }
+}
 .down__link {
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -89,7 +124,9 @@
 
 .foot-soc {
     @media screen and (min-width:1200px) {
-        
+        margin: 0;
+        padding: 0;
+
     }
 }
 
@@ -114,7 +151,7 @@
     align-items: center;
     gap: 10px;
     @media screen and (min-width:1200px) {
-        justify-content: baseline;
+        // justify-content: baseline;
     }
 }
 

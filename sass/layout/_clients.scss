@@ -16,14 +16,26 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
     @extend %margin-auto;
     @media screen and (min-width:1200px) {
         display: flex;
-    
+    flex-wrap: nowrap;
         gap: 30px;
     }
    
     
+}
+
+.clients__item{
+    @media screen and (min-width:1200px) {
+        display: inline;
+
+        &:not(:last-child){
+            margin-right: 0;
+        }
+    }
 }
 
 
@@ -36,6 +48,9 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     &:hover {
         border-color: #2196F3;
+    }
+    @media screen and (min-width:480px) {
+        width: 210px;
     }
 
     @media screen and (min-width:768px) {
